@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp">
         <activity
-            android:name=".workout.ExerciseListActivity"
+            android:name=".activities.ExerciseListActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name="com.project.fitnessapp.activities.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.project.fitnessapp.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

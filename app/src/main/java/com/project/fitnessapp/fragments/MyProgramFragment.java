@@ -1,4 +1,4 @@
-package com.project.fitnessapp.nutrition;
+package com.project.fitnessapp.fragments;
 
 import android.os.Bundle;
 
@@ -10,12 +10,11 @@ import android.view.ViewGroup;
 
 import com.project.fitnessapp.R;
 
-
-public class NutritionFragment extends Fragment {
+public class MyProgramFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_nutrition, container, false);
+        return inflater.inflate(R.layout.fragment_my_program, container, false);
     }
 }

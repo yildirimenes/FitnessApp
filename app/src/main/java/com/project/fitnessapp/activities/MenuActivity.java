@@ -1,4 +1,4 @@
-package com.project.fitnessapp;
+package com.project.fitnessapp.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,10 +8,11 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import com.project.fitnessapp.myprogram.MyProgramFragment;
-import com.project.fitnessapp.nutrition.NutritionFragment;
-import com.project.fitnessapp.profile.ProfileFragment;
-import com.project.fitnessapp.workout.WorkoutFragment;
+import com.project.fitnessapp.R;
+import com.project.fitnessapp.fragments.MyProgramFragment;
+import com.project.fitnessapp.fragments.NutritionFragment;
+import com.project.fitnessapp.fragments.ProfileFragment;
+import com.project.fitnessapp.fragments.WorkoutFragment;
 
 public class MenuActivity extends AppCompatActivity {
 

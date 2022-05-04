@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp">
         <activity
-            android:name=".activities.ExerciseListActivity"
+            android:name=".activities.ExerciseActivity"
             android:exported="false" />
         <activity
             android:name="com.project.fitnessapp.activities.MenuActivity"

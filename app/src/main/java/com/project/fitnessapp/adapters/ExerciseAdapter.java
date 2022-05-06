@@ -1,7 +1,6 @@
 package com.project.fitnessapp.adapters;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,20 +11,21 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.fitnessapp.R;
-import com.project.fitnessapp.activities.ExerciseActivity;
-import com.project.fitnessapp.activities.MainActivity;
 import com.project.fitnessapp.classes.Exercise;
+import com.project.fitnessapp.data.Database;
 
 import java.util.List;
 
 public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.CardViewDesignObjectHandler>{
     private Context mContext;
     private List <Exercise> exerciseList;
+    private Database db;
 
 
-    public ExerciseAdapter(Context mContext, List<Exercise> exerciseList) {
+    public ExerciseAdapter(Context mContext, List<Exercise> exerciseList, Database db) {
         this.mContext = mContext;
         this.exerciseList = exerciseList;
+        this.db = db;
     }
 
 
@@ -57,7 +57,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.CardVi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // detaya geçilecek veya myprograma kaydedilecek
+                // create detailActivity
 
             }
         });

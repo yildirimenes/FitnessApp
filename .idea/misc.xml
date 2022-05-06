@@ -6,20 +6,21 @@
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/drawable/ic_baseline_arrow_circle_right_24.xml" value="0.31" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/drawable/ic_baseline_assignment_24.xml" value="0.196" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_bos.xml" value="0.16486486486486487" />
-        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_exercise.xml" value="0.1" />
+        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_exercise.xml" value="0.128" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_exercise_list.xml" value="0.152" />
-        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_main.xml" value="0.136" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/activity_menu.xml" value="0.12" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/card_bodysection_design.xml" value="0.2" />
-        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/card_exercise_design.xml" value="0.152" />
+        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/card_exercise_design.xml" value="0.264" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/card_exerciselist_design.xml" value="0.152" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_my_program.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_nutrition.xml" value="0.23783783783783785" />
-        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_profile.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_workout.xml" value="0.144" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/layout/fragment_workout_list.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.23783783783783785" />
+        <entry key="..\:/Users/enes2/AndroidStudioProjects/FitnessApp/app/src/main/res/menu/toolbar_menu.xml" value="0.16486486486486487" />
       </map>
     </option>
   </component>

@@ -6,4 +6,4 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_background"
     android:orientation="vertical"
-    tools:context="com.project.fitnessapp.activities.MainActivity" />
+    tools:context="com.project.fitnessapp.activities.SplashActivity" />

@@ -25,7 +25,10 @@ public class ExerciseDao {
                     ,c.getString(c.getColumnIndexOrThrow("bodysection_image_name")));
 
             Exercise  e = new Exercise(c.getInt(c.getColumnIndexOrThrow("exercise_id"))
-                    ,c.getString(c.getColumnIndexOrThrow("exercise_name")),b);
+                    ,c.getString(c.getColumnIndexOrThrow("exercise_name"))
+                    ,c.getString(c.getColumnIndexOrThrow("exercise_image"))
+                    ,c.getString(c.getColumnIndexOrThrow("exercise_info"))
+                    ,b);
 
             exerciseArrayList.add(e);
 
@@ -33,27 +36,5 @@ public class ExerciseDao {
         return exerciseArrayList;
 
     }
-
-    /*
-    public ArrayList<Exercise> exerciseSearch(Database db,String searchWords) {
-
-        ArrayList<Exercise> exerciseArrayList = new ArrayList<>();
-
-        SQLiteDatabase sqLiteDatabase = db.getWritableDatabase();
-
-        Cursor c = sqLiteDatabase.rawQuery("SELECT * FROM exerciselist WHERE exercise_name like '%\"+searchWords+\"%'",null);
-
-        while (c.moveToNext()) {
-            Exercise  e = new Exercise(c.getInt(c.getColumnIndexOrThrow("exercise_id"))
-                    ,c.getString(c.getColumnIndexOrThrow("exercise_name")),null);
-
-            exerciseArrayList.add(e);
-        }
-        return exerciseArrayList;
-    }
-    */
-
-
-
 
 }

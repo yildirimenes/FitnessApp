@@ -40,7 +40,7 @@ public class ExerciseActivity extends AppCompatActivity {
 
         db = new Database(this);
 
-        bodySection = (BodySection) getIntent().getSerializableExtra("object");
+        bodySection = (BodySection) getIntent().getSerializableExtra("bodysection_object");
 
         toolbar.setTitle(bodySection.getBodysection_name());
         setSupportActionBar(toolbar);

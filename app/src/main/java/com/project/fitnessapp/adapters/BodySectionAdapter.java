@@ -69,7 +69,7 @@ public class BodySectionAdapter extends RecyclerView.Adapter<BodySectionAdapter.
             public void onClick(View view) {
 
                 Intent intent = new Intent(mContext,ExerciseActivity.class);
-                intent.putExtra("object",bodySection);
+                intent.putExtra("bodysection_object",bodySection);
                 mContext.startActivity(intent);
 
             }

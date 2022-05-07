@@ -1,6 +1,7 @@
 package com.project.fitnessapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.fitnessapp.R;
+import com.project.fitnessapp.activities.DetailActivity;
 import com.project.fitnessapp.classes.Exercise;
 import com.project.fitnessapp.data.Database;
 
@@ -57,8 +59,9 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.CardVi
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // create detailActivity
-
+                Intent intent = new Intent(mContext, DetailActivity.class);
+                intent.putExtra("exercise_object",exercise);
+                mContext.startActivity(intent);
             }
         });
 

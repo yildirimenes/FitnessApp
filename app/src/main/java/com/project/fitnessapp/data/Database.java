@@ -19,9 +19,12 @@ public class Database extends SQLiteOpenHelper {
                 "\t\"bodysection_name\"\tTEXT,\n" +
                 "\t\"bodysection_image_name\"\tTEXT\n" +
                 ");");
-        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS\"exerciselist\" (\n" +
+
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS \"exerciselist\" (\n" +
                 "\t\"exercise_id\"\tINTEGER PRIMARY KEY AUTOINCREMENT,\n" +
                 "\t\"exercise_name\"\tTEXT,\n" +
+                "\t\"exercise_image\"\tTEXT,\n" +
+                "\t\"exercise_info\"\tTEXT,\n" +
                 "\t\"bodysection_id\"\tINTEGER,\n" +
                 "\tFOREIGN KEY(\"bodysection_id\") REFERENCES \"bodysection\"(\"bodysection_id\")\n" +
                 ");");

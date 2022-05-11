@@ -29,6 +29,13 @@ public class Database extends SQLiteOpenHelper {
                 "\tFOREIGN KEY(\"bodysection_id\") REFERENCES \"bodysection\"(\"bodysection_id\")\n" +
                 ");");
 
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS \"foodlist\" (\n" +
+                "\t\"food_id\"\tINTEGER PRIMARY KEY AUTOINCREMENT,\n" +
+                "\t\"food_name\"\tTEXT,\n" +
+                "\t\"food_amount\"\tTEXT,\n" +
+                "\t\"food_calorie\"\tINTEGER\n" +
+                ");");
+
     }
 
     @Override
@@ -36,6 +43,7 @@ public class Database extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS bodysection");
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS exerciselist");
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS foodlist");
         onCreate(sqLiteDatabase);
 
 

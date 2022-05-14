@@ -1,24 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.project.fitnessapp.fragments.NutritionFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarFood"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:paddingLeft="0dp"
-        android:paddingTop="0dp"
-        android:paddingRight="0dp"
-        android:theme="?attr/actionBarTheme" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgViewDailyCalorie"
+        android:layout_width="365dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="110dp"
+        android:adjustViewBounds="true"
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recFood"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:scaleType="fitXY"
+        android:src="@drawable/daily_calorie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgViewFoodList"
+        android:layout_width="365dp"
+        android:layout_height="180dp"
+
+        android:layout_marginTop="90dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/food_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="365dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Günlük Kalori Alımı Hesaplayıcısı"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewDailyCalorie" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Besinlerin Kalori Miktarları"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewFoodList" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

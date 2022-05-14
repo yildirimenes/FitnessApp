@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,6 +17,7 @@ import com.project.fitnessapp.classes.Exercise;
 import com.project.fitnessapp.classes.Food;
 import com.project.fitnessapp.data.Database;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesignObjectHandler>{
@@ -23,7 +25,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesign
     private List<Food> foodList;
     private Database db;
 
-    public FoodAdapter(Context mContext, List<Food> foodList) {
+    public FoodAdapter(Context mContext, List<Food> foodList,Database db) {
         this.mContext = mContext;
         this.foodList = foodList;
         this.db = db;

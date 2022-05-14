@@ -11,7 +11,7 @@
         android:layout_width="330dp"
         android:layout_height="255dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/chest"
+        android:src="@drawable/default_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

@@ -31,6 +31,9 @@
                 tools:srcCompat="@tools:sample/avatars"
                 app:shapeAppearanceOverlay="@style/roundimageview"/>
 
+
+
+
             <TextView
                 android:id="@+id/textViewBodySection"
                 android:layout_width="wrap_content"

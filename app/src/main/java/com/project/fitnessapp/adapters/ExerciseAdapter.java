@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -34,12 +35,14 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.CardVi
     public class CardViewDesignObjectHandler extends RecyclerView.ViewHolder {
         public TextView textViewExercise;
         public CardView cardViewExercise;
+        public ImageView imageViewNextActivity;
 
 
         public CardViewDesignObjectHandler(@NonNull View itemView) {
             super(itemView);
             textViewExercise = itemView.findViewById(R.id.textViewExercise);
             cardViewExercise = itemView.findViewById(R.id.cardViewExercise);
+            imageViewNextActivity = itemView.findViewById(R.id.imageViewNextActivity);
         }
     }
 
@@ -56,15 +59,15 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.CardVi
 
         holder.textViewExercise.setText(exercise.getExercise_name());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.imageViewNextActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, DetailActivity.class);
                 intent.putExtra("exercise_object",exercise);
                 mContext.startActivity(intent);
+
             }
         });
-
 
     }
 

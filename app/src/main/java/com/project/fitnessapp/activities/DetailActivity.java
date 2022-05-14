@@ -31,8 +31,5 @@ public class DetailActivity extends AppCompatActivity {
 
         gifImageView.setImageResource(getResources().getIdentifier(exercise.getExercise_image(),"drawable",getPackageName()));
 
-
-
-
     }
 }

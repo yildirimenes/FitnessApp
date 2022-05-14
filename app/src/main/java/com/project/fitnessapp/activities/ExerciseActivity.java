@@ -44,6 +44,9 @@ public class ExerciseActivity extends AppCompatActivity {
 
         toolbar.setTitle(bodySection.getBodysection_name());
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
 
         exerciseArrayList = new ExerciseDao().allExerciseByBodySectionId(db,bodySection.getBodysection_id());
 
@@ -55,8 +58,11 @@ public class ExerciseActivity extends AppCompatActivity {
         exerciseAdapter = new ExerciseAdapter(this,exerciseArrayList, db);
         recExercise.setAdapter(exerciseAdapter);
 
-
     }
 
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
 }

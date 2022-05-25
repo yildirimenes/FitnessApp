@@ -40,6 +40,7 @@
         android:background="#f5f5f5"
         android:text="TextView"
         android:textAlignment="viewStart"
+        android:textColor="#616161"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

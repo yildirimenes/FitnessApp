@@ -1,11 +1,8 @@
 package com.project.fitnessapp.activities;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
 import android.webkit.WebView;
-
 import com.project.fitnessapp.R;
 
 public class DailyCalorieActivity extends AppCompatActivity {
@@ -21,7 +18,7 @@ public class DailyCalorieActivity extends AppCompatActivity {
         toolbarCalorie = findViewById(R.id.toolbarCalorie);
         webView = findViewById(R.id.webView);
 
-        toolbarCalorie.setTitle("Günlük Kalori İhtiyacı");
+        toolbarCalorie.setTitle("Daily Calorie Requirement");
         setSupportActionBar(toolbarCalorie);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);

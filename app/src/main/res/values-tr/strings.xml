@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="DailyCalorieCalculator">Günlük Kalori Hesaplayıcısı</string>
+    <string name="CaloricValuesOfFoods">Gıdaların Kalori Miktarları</string>
+    <string name="BodyMassIndex">Vücut Kitle Indeksi</string>
+    <string name="DarkMode">Gece Modu</string>
+    <string name="RateUs">Bizi Oyla</string>
+    <string name="Language">Dil Seçenekleri</string>
+    <string name="DailyCalorieRequirement">Günlük Kalori Ihtiyacı</string>
+    <string name="Workout">Egzersiz</string>
+    <string name="Nutrition">Beslenme</string>
+    <string name="Profile">Kullanıcı</string>
+
+
+</resources>

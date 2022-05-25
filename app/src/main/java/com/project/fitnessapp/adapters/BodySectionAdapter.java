@@ -16,11 +16,6 @@ import com.project.fitnessapp.R;
 import com.project.fitnessapp.activities.ExerciseActivity;
 import com.project.fitnessapp.classes.BodySection;
 import com.project.fitnessapp.data.Database;
-import com.project.fitnessapp.data.DatabaseCopyHelper;
-import com.project.fitnessapp.data.ExerciseDao;
-import com.project.fitnessapp.fragments.WorkoutFragment;
-
-import java.io.IOException;
 import java.util.List;
 
 public class BodySectionAdapter extends RecyclerView.Adapter<BodySectionAdapter.CardViewDesignObjectHandler> {

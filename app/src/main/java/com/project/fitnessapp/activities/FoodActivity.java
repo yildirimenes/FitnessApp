@@ -1,16 +1,19 @@
 package com.project.fitnessapp.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.project.fitnessapp.R;
 import com.project.fitnessapp.adapters.FoodAdapter;
 import com.project.fitnessapp.classes.Food;
@@ -26,6 +29,7 @@ public class FoodActivity extends AppCompatActivity implements SearchView.OnQuer
     public ArrayList<Food> foodArrayList;
     private FoodAdapter adapter;
     private Database db;
+    private FloatingActionButton btn_floating;
 
 
     @Override
@@ -35,10 +39,11 @@ public class FoodActivity extends AppCompatActivity implements SearchView.OnQuer
 
         toolbarFood = findViewById(R.id.toolbarFood);
         recFood = findViewById(R.id.recFood);
+        btn_floating = findViewById(R.id.btn_floating);
 
         db = new Database(this);
 
-        toolbarFood.setTitle("Kaç Kalori ?");
+        toolbarFood.setTitle("How Many Calories ?");
         setSupportActionBar(toolbarFood);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
@@ -50,6 +55,25 @@ public class FoodActivity extends AppCompatActivity implements SearchView.OnQuer
 
         adapter = new FoodAdapter(this,foodArrayList,db);
         recFood.setAdapter(adapter);
+
+
+        recFood.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                if (newState > 0) {
+                    btn_floating.hide();
+                }
+                else {
+                    btn_floating.show();
+                }
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+        });
+
+        btn_floating.setOnClickListener(view -> {
+            Intent intent = new Intent(FoodActivity.this, TotalCalorieActivity.class);
+            startActivity(intent);
+        });
 
     }
 

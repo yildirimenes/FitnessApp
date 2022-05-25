@@ -18,7 +18,7 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageViewBodySection"
                 android:layout_width="365dp"
-                android:layout_height="150dp"
+                android:layout_height="160dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:adjustViewBounds="true"
@@ -28,20 +28,19 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars"
-                app:shapeAppearanceOverlay="@style/roundimageview"/>
-
-
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@tools:sample/avatars" />
 
 
             <TextView
                 android:id="@+id/textViewBodySection"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="24dp"
                 android:text="TextView"
-                android:textColor="#FF5252"
+                android:textColor="#90a4ae"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:typeface="serif"

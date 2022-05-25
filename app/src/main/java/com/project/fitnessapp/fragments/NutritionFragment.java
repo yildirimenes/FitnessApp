@@ -22,6 +22,7 @@ public class NutritionFragment extends Fragment {
     private ImageView imgViewFoodList,imgViewDailyCalorie;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 
@@ -31,20 +32,14 @@ public class NutritionFragment extends Fragment {
         imgViewFoodList = design.findViewById(R.id.imgViewFoodList);
 
 
-        imgViewDailyCalorie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(),DailyCalorieActivity.class);
-                startActivity(intent);
-            }
+        imgViewDailyCalorie.setOnClickListener(view -> {
+            Intent intent = new Intent(requireContext(),DailyCalorieActivity.class);
+            startActivity(intent);
         });
 
-        imgViewFoodList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(),FoodActivity.class);
-                startActivity(intent);
-            }
+        imgViewFoodList.setOnClickListener(view -> {
+            Intent intent = new Intent(requireContext(),FoodActivity.class);
+            startActivity(intent);
         });
 
 

@@ -4,20 +4,17 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.SearchView;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.fitnessapp.R;
-import com.project.fitnessapp.classes.Exercise;
 import com.project.fitnessapp.classes.Food;
 import com.project.fitnessapp.data.Database;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesignObjectHandler>{
@@ -37,6 +34,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesign
         public TextView textViewFoodName;
         public TextView textViewFoodAmount;
         public TextView textViewFoodCalorie;
+        public ToggleButton toggleButton;
 
         public CardViewDesignObjectHandler(@NonNull View itemView) {
             super(itemView);
@@ -44,6 +42,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesign
             textViewFoodName = itemView.findViewById(R.id.textViewFoodName);
             textViewFoodAmount = itemView.findViewById(R.id.textViewFoodAmount);
             textViewFoodCalorie = itemView.findViewById(R.id.textViewFoodCalorie);
+            toggleButton = itemView.findViewById(R.id.toggleButton);
         }
 
     }
@@ -62,6 +61,21 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesign
         holder.textViewFoodName.setText(food.getFood_name());
         holder.textViewFoodAmount.setText(food.getFood_amount());
         holder.textViewFoodCalorie.setText(String.valueOf(food.getFood_calorie()));
+
+        holder.toggleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (holder.toggleButton.isChecked()) {
+                    Toast.makeText(mContext,"Sepete Eklendi",Toast.LENGTH_SHORT).show();
+
+                }
+                else {
+
+                }
+
+            }
+        });
+
 
 
     }

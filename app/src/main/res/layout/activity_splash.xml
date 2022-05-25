@@ -4,6 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_background"
-    android:orientation="vertical"
-    tools:context="com.project.fitnessapp.activities.SplashActivity" />
+    tools:context="com.project.fitnessapp.activities.SplashActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash">
+
+    </pl.droidsonroids.gif.GifImageView>
+
+
+</LinearLayout>

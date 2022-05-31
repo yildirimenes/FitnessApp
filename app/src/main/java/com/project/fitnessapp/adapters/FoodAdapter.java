@@ -1,6 +1,7 @@
 package com.project.fitnessapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.fitnessapp.R;
+import com.project.fitnessapp.activities.DetailActivity;
+import com.project.fitnessapp.activities.TotalCalorieActivity;
 import com.project.fitnessapp.classes.Food;
 import com.project.fitnessapp.data.Database;
 
@@ -62,21 +65,14 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.CardViewDesign
         holder.textViewFoodAmount.setText(food.getFood_amount());
         holder.textViewFoodCalorie.setText(String.valueOf(food.getFood_calorie()));
 
-        holder.toggleButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (holder.toggleButton.isChecked()) {
-                    Toast.makeText(mContext,"Sepete Eklendi",Toast.LENGTH_SHORT).show();
-
-                }
-                else {
-
-                }
+        holder.toggleButton.setOnClickListener(view -> {
+            if (holder.toggleButton.isChecked()) {
+                Toast.makeText(mContext,"Sepete Eklendi",Toast.LENGTH_SHORT).show();
+            }
+            else {
 
             }
         });
-
-
 
     }
 

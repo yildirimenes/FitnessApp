@@ -43,7 +43,7 @@ public class FoodActivity extends AppCompatActivity implements SearchView.OnQuer
 
         db = new Database(this);
 
-        toolbarFood.setTitle("How Many Calories ?");
+        toolbarFood.setTitle(R.string.HowManyCalories);
         setSupportActionBar(toolbarFood);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);

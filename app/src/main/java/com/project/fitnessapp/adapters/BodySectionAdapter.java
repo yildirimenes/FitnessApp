@@ -59,15 +59,12 @@ public class BodySectionAdapter extends RecyclerView.Adapter<BodySectionAdapter.
         holder.textViewBodySection.setText(bodySection.getBodysection_name());
         holder.imageViewBodySection.setImageResource(mContext.getResources().getIdentifier(bodySection.getBodysection_image_name(),"drawable", mContext.getPackageName()));
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        holder.itemView.setOnClickListener(view -> {
 
-                Intent intent = new Intent(mContext,ExerciseActivity.class);
-                intent.putExtra("bodysection_object",bodySection);
-                mContext.startActivity(intent);
+            Intent intent = new Intent(mContext,ExerciseActivity.class);
+            intent.putExtra("bodysection_object",bodySection);
+            mContext.startActivity(intent);
 
-            }
         });
 
     }

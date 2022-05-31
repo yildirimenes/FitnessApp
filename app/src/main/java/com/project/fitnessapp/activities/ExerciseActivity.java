@@ -28,7 +28,7 @@ public class ExerciseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_exercise);
 
         toolbar = findViewById(R.id.toolbar);
-        recExercise = findViewById(R.id.recExercise);
+        recExercise = findViewById(R.id.recFoodCalorie);
 
         db = new Database(this);
 

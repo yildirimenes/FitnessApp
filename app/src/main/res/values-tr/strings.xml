@@ -10,10 +10,13 @@
     <string name="DarkMode">Gece Modu</string>
     <string name="RateUs">Bizi Oyla</string>
     <string name="Language">Dil Seçenekleri</string>
-    <string name="DailyCalorieRequirement">Günlük Kalori Ihtiyacı</string>
+    <string name="DailyCalorieRequirement">Günlük Kalori İhtiyacı</string>
     <string name="Workout">Egzersiz</string>
     <string name="Nutrition">Beslenme</string>
     <string name="Profile">Kullanıcı</string>
+    <string name="AtYourServiceSoon">"Çok Yakında Hizmetinizde "</string>
+    <string name="HowManyCalories">Kaç Kalori ?</string>
+    <string name="CalorieCalculation">Kalori Hesaplama</string>
 
 
 </resources>

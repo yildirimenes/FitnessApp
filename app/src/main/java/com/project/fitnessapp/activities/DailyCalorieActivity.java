@@ -18,7 +18,7 @@ public class DailyCalorieActivity extends AppCompatActivity {
         toolbarCalorie = findViewById(R.id.toolbarCalorie);
         webView = findViewById(R.id.webView);
 
-        toolbarCalorie.setTitle("Daily Calorie Requirement");
+        toolbarCalorie.setTitle(R.string.DailyCalorieRequirement);
         setSupportActionBar(toolbarCalorie);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);

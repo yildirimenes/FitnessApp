@@ -59,14 +59,11 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.CardVi
 
         holder.textViewExercise.setText(exercise.getExercise_name());
 
-        holder.imageViewNextActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(mContext, DetailActivity.class);
-                intent.putExtra("exercise_object",exercise);
-                mContext.startActivity(intent);
+        holder.imageViewNextActivity.setOnClickListener(view -> {
+            Intent intent = new Intent(mContext, DetailActivity.class);
+            intent.putExtra("exercise_object",exercise);
+            mContext.startActivity(intent);
 
-            }
         });
 
     }

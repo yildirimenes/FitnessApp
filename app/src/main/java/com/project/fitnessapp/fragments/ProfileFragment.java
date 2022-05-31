@@ -71,12 +71,7 @@ public class ProfileFragment extends Fragment {
 
         textViewRateUs.setOnClickListener(view -> startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=" + "com.android.chrome"))));
 
-        textViewChangeLang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showChangeLanguageDialog();
-            }
-        });
+        textViewChangeLang.setOnClickListener(view -> showChangeLanguageDialog());
 
 
         return design;

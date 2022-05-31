@@ -13,5 +13,8 @@
     <string name="Workout">Workout</string>
     <string name="Nutrition">Nutrition</string>
     <string name="Profile">Profile</string>
+    <string name="AtYourServiceSoon">at your service soon</string>
+    <string name="HowManyCalories">How Many Calories ?</string>
+    <string name="CalorieCalculation">Calorie Calculation</string>
 </resources>
 
